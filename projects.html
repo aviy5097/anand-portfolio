@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Anand Kumar | Mini Apps</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/remixicon@4.3.0/fonts/remixicon.css" rel="stylesheet">
+  <link rel="stylesheet" href="projects.css">
+</head>
+<body>
+  <header><a href="index.html" class="back"><i class="ri-arrow-left-line"></i> Portfolio</a><span>ANAND KUMAR / MINI APPS</span></header>
+  <main>
+    <section class="intro"><p>Four browser-based experiments</p><h1>Small ideas.<br><em>Real interactions.</em></h1><span>Built with HTML, CSS &amp; JavaScript</span></section>
+
+    <section class="app heritage" id="heritage"><div class="app-heading"><span>01 / Heritage Quest</span><h2>How well do you know India’s heritage?</h2><p>Answer three quick questions and see your score.</p></div><div class="app-panel quiz-panel"><p id="quiz-progress">Question 1 of 3</p><h3 id="quiz-question"></h3><div class="answers" id="quiz-answers"></div><p class="app-message" id="quiz-message"></p><button class="outline-button" id="quiz-restart" hidden>Play again</button></div></section>
+
+    <section class="app eco" id="ecosort"><div class="app-heading"><span>02 / EcoSort Challenge</span><h2>Sort everyday waste correctly.</h2><p>Choose the right bin for each item. Learn while you play.</p></div><div class="app-panel eco-panel"><div class="item-display"><span id="eco-emoji">🥤</span><h3 id="eco-item">Plastic bottle</h3><p id="eco-count">Item 1 of 5</p></div><div class="bin-buttons"><button data-bin="recycle">♻️ Recycle</button><button data-bin="compost">🌱 Compost</button><button data-bin="landfill">🗑️ Landfill</button></div><p class="app-message" id="eco-message"></p><button class="outline-button" id="eco-restart" hidden>Try again</button></div></section>
+
+    <section class="app focus" id="focusflow"><div class="app-heading"><span>03 / FocusFlow</span><h2>Plan a calm study sprint.</h2><p>A Pomodoro timer plus a simple task list that is saved in your browser.</p></div><div class="focus-layout"><div class="app-panel timer-panel"><p class="timer-label">FOCUS SESSION</p><div class="timer" id="timer">25:00</div><div class="timer-actions"><button id="timer-toggle">Start</button><button class="outline-button" id="timer-reset">Reset</button></div></div><div class="app-panel tasks-panel"><div class="task-input"><input id="task-input" type="text" placeholder="Add a task for this session"><button id="task-add" aria-label="Add task"><i class="ri-add-line"></i></button></div><ul id="task-list"></ul></div></div></section>
+
+    <section class="app grades" id="gradepath"><div class="app-heading"><span>04 / GradePath</span><h2>Calculate your SGPA.</h2><p>Add subjects, credits, and grade points to see a weighted result.</p></div><div class="app-panel grade-panel"><div id="grade-rows"><div class="grade-row"><input aria-label="Subject" placeholder="Subject"><input class="credit" aria-label="Credits" type="number" min="1" value="4"><input class="point" aria-label="Grade point" type="number" min="0" max="10" value="8"></div><div class="grade-row"><input aria-label="Subject" placeholder="Subject"><input class="credit" aria-label="Credits" type="number" min="1" value="3"><input class="point" aria-label="Grade point" type="number" min="0" max="10" value="9"></div></div><div class="grade-actions"><button class="outline-button" id="add-grade"><i class="ri-add-line"></i> Add subject</button><button id="calculate-grade">Calculate SGPA</button></div><div class="grade-result" id="grade-result">—</div></div></section>
+  </main>
+  <footer>Made by Anand Kumar · <a href="index.html">Back to portfolio</a></footer>
+  <script src="projects.js"></script>
+</body>
+</html>
