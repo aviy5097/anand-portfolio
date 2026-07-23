@@ -20,7 +20,7 @@
 .journey-intro h2 { margin: 18px 0; }
 .journey-intro p { color: var(--muted); line-height: 1.75; margin: 0; max-width: 520px; }
 .journey-line { background: var(--line); height: 1px; margin: 60px 0 0; }
-.journey-stats { display: grid; grid-template-columns: 1.2fr 1fr 1fr 1.5fr; }
+.journey-stats { display: grid; grid-template-columns: 1.2fr repeat(3, .9fr) 1fr 1.5fr; }
 .journey-stats article { border-right: 1px solid var(--line); min-height: 116px; padding: 25px 20px 0 0; }
 .journey-stats article:not(:first-child) { padding-left: 22px; }
 .journey-stats article:last-child { border: 0; }
